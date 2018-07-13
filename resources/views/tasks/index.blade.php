@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>メッセージ一覧</h1>
+    <h1>タスク一覧</h1>
     @if(count($tasks) > 0)
         <ul>
             @foreach($tasks as $task)
@@ -11,6 +11,6 @@
         </ul>
     @endif
     
-        {!! link_to_route('tasks.create', '新規メッセージの投稿') !!}
+        {!! link_to_route('tasks.create', '新規タスクの投稿') !!}
     
 @endsection
